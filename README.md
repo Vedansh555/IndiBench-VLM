@@ -1,10 +1,10 @@
-# 🌍 Mitigating Western Bias in Vision-Language Models
+# Mitigating Western Bias in Vision-Language Models
 
 ![Python](https://img.shields.io/badge/Python-3.10%2B-blue)
 ![PyTorch](https://img.shields.io/badge/PyTorch-2.0%2B-ee4c2c)
 ![HuggingFace](https://img.shields.io/badge/HuggingFace-Transformers-F9D423)
 
-## 📌 Project Overview
+## Project Overview
 Foundational Vision-Language Models (VLMs) exhibit a pronounced "Western Bias" due to their training data. When presented with specific regional artifacts—particularly traditional Indian garments—these models often default to generic Western classifications (e.g., misclassifying a *Lehenga* as a *Ball Gown*).
 
 This repository contains the code and methodology to:
@@ -14,7 +14,7 @@ This repository contains the code and methodology to:
 
 ---
 
-## 🛠️ The Hard-Negative Generation Pipeline
+## The Hard-Negative Generation Pipeline
 To mathematically prove this bias, models must be tested on "Hard Negatives"—images that share the same visual silhouette but belong to a different cultural context. 
 
 We built an automated, VRAM-efficient pipeline to generate these pairs from the Indo-Fashion dataset:
@@ -25,7 +25,7 @@ We built an automated, VRAM-efficient pipeline to generate these pairs from the 
 
 ---
 
-## 📊 Benchmark Results (The 2AFC Showdown)
+## Benchmark Results (The 2AFC Showdown)
 Models were presented with the Indian garment and the generated Western garment side-by-side and prompted: *"Which side is the [Indian Garment] on?"* A score near 50% indicates a complete lack of latent cultural representation (blind guessing).
 
 | Model Architecture | Accuracy | Western Bias (Error Rate) | Verdict |
@@ -36,7 +36,7 @@ Models were presented with the Indian garment and the generated Western garment 
 
 ---
 
-## 📂 Repository Structure
+## Repository Structure
 
 ```text
 ├── notebooks/
